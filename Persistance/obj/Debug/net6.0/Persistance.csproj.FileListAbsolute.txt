@@ -1,0 +1,17 @@
+D:\c#\modsen\Persistance\bin\Debug\net6.0\Persistance.deps.json
+D:\c#\modsen\Persistance\bin\Debug\net6.0\Persistance.runtimeconfig.json
+D:\c#\modsen\Persistance\bin\Debug\net6.0\Persistance.dll
+D:\c#\modsen\Persistance\bin\Debug\net6.0\Persistance.pdb
+D:\c#\modsen\Persistance\bin\Debug\net6.0\Domain.dll
+D:\c#\modsen\Persistance\bin\Debug\net6.0\Domain.pdb
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.csproj.AssemblyReference.cache
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfoInputs.cache
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfo.cs
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.csproj.CoreCompileInputs.cache
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.csproj.CopyComplete
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.dll
+D:\c#\modsen\Persistance\obj\Debug\net6.0\refint\Persistance.dll
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.pdb
+D:\c#\modsen\Persistance\obj\Debug\net6.0\Persistance.genruntimeconfig.cache
+D:\c#\modsen\Persistance\obj\Debug\net6.0\ref\Persistance.dll
