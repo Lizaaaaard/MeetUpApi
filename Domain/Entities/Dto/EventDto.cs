@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Domain.Entities.Dto;
+﻿namespace Domain.Entities.Dto;
 
 public class EventDto
 {

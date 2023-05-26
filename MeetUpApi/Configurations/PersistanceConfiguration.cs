@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Persistance;
+using Persistance.Repositories.Event;
+using Persistance.Repositories.Speaker;
 
 namespace API.Configurations
 {
@@ -12,7 +14,12 @@ namespace API.Configurations
                 options
                     .UseSqlServer(connection));
             services.AddControllers()
-                .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+                .AddNewtonsoftJson(x => x
+                    .SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling
+                    .Ignore);
+            
+            services.AddScoped<IEventRepository, EventRepository>();
+            services.AddScoped<ISpeakerRepository, SpeakerRepository>();
             return services;
         }
     }

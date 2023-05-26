@@ -55,7 +55,7 @@ namespace Persistance.Migrations
 
                     b.HasIndex("OrganizerId");
 
-                    b.ToTable("Events");
+                    b.ToTable("Events", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.EventSpeaker", b =>
@@ -70,7 +70,7 @@ namespace Persistance.Migrations
 
                     b.HasIndex("SpeakerId");
 
-                    b.ToTable("EventSpeakers");
+                    b.ToTable("EventSpeakers", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Organizer", b =>
@@ -87,7 +87,7 @@ namespace Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Organizers");
+                    b.ToTable("Organizers", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Speaker", b =>
@@ -104,7 +104,7 @@ namespace Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Speakers");
+                    b.ToTable("Speakers", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.User", b =>

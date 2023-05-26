@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Persistance.Configurations;
 
 namespace Persistance
 {
@@ -20,19 +21,11 @@ namespace Persistance
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Event>().HasKey(e => e.Id);
-            modelBuilder.Entity<Speaker>().HasKey(s => s.Id);
-            modelBuilder.Entity<Event>()
-                .HasMany(s => s.Speakers)
-                .WithMany(e => e.Events)
-                .UsingEntity<EventSpeaker>();
-            modelBuilder.Entity<Organizer>().HasKey(o => o.Id);
-            modelBuilder.Entity<Organizer>()
-                .HasMany(e => e.Events)
-                .WithOne(c => c.Organizer)
-                .HasForeignKey(o => o.OrganizerId);
-            modelBuilder.Entity<EventSpeaker>()
-                .HasKey(c => new { c.EventId, c.SpeakerId });
+            
+            modelBuilder.ApplyConfiguration(new EventConfiguration());
+            modelBuilder.ApplyConfiguration(new OrganizerConfiguration());
+            modelBuilder.ApplyConfiguration(new SpeakerConfiguration());
+            modelBuilder.ApplyConfiguration(new EventSpeakerConfiguration());
         }
     }
 }

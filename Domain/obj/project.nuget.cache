@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dli9xi0HzuSeTJMin8jkwNK6B0waZiW9uZyKuEODnQQkArAXgeHGIF6hhfybu5lnnPI6630m/nMARd6XVItfwg==",
+  "dgSpecHash": "ASfA8yeKOyb+MDyWN4+BYFsgjemiyz87SoAZD0zr+aiTGftaTzzqDzSz4xFIYixj8wt2985geFOvMEyHpLGiDA==",
   "success": true,
   "projectFilePath": "D:\\c#\\modsen\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Huawei\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Huawei\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

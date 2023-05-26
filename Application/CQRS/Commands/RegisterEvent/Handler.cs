@@ -1,5 +1,4 @@
 ﻿using Application.Interfaces;
-using Domain.Entities;
 using MediatR;
 
 namespace Application.CQRS.Commands.RegisterEvent;

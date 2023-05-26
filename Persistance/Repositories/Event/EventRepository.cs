@@ -14,23 +14,25 @@ public class EventRepository: IEventRepository
     public async Task<List<Domain.Entities.Event>> GetAllEvents()
     {
         return _ctx.Events
-            .Include(e => e.Speakers)
+            .Include(e => e.EventSpeakers)
+            .ThenInclude(e => e.Speaker)
             .Include(e => e.Organizer)
             .ToList();
     }
     
-    public async Task<Domain.Entities.Event> GetEvent(int eventId)
+    public async Task<Domain.Entities.Event> GetEvent(int? eventId)
     {
         return _ctx.Events
-            .Include(e => e.Speakers)
+            .Include(e => e.EventSpeakers)
+            .ThenInclude(e => e.Speaker)
             .Include(e => e.Organizer)
             .Where(ev => ev.Id == eventId).FirstOrDefault();
     }
     
     public async Task RegisterEvent(Domain.Entities.Event newEvent)
     {
-        _ctx.Events.Add(newEvent);
-       await _ctx.SaveChangesAsync();
+        await _ctx.Events.AddAsync(newEvent);
+        await _ctx.SaveChangesAsync();
     }
 
     public async Task RemoveEvent(Domain.Entities.Event ev)
